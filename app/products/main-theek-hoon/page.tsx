@@ -6,6 +6,7 @@ import {
   MTH_PRODUCT_NAME,
   MTH_TAGLINE,
 } from "@/lib/mth/constants";
+import { seoPages } from "@/lib/mth/seo-pages";
 
 export const metadata: Metadata = {
   title: `${MTH_PRODUCT_NAME} | Daily Check-In App | Verve Visions`,
@@ -204,6 +205,38 @@ export default function MainTheekHoonPage() {
               ))}
             </ul>
           </div>
+        </div>
+      </section>
+
+      {/* SEO solution pages */}
+      <section className="border-t border-zinc-200 bg-zinc-50 dark:border-zinc-800 dark:bg-zinc-900/30">
+        <div className="mx-auto max-w-6xl px-6 py-20">
+          <div className="mx-auto max-w-3xl text-center">
+            <h2 className="text-3xl font-semibold text-zinc-900 dark:text-zinc-50">
+              Find the right fit
+            </h2>
+            <p className="mt-4 text-lg text-zinc-600 dark:text-zinc-400">
+              Explore how {MTH_PRODUCT_NAME} helps different people and
+              families.
+            </p>
+          </div>
+          <ul className="mx-auto mt-10 grid max-w-4xl gap-4 sm:grid-cols-2">
+            {seoPages.map((page) => (
+              <li key={page.slug}>
+                <Link
+                  href={`/${page.slug}`}
+                  className="block rounded-xl border border-zinc-200 bg-white p-5 transition-colors hover:border-zinc-300 dark:border-zinc-800 dark:bg-zinc-950 dark:hover:border-zinc-700"
+                >
+                  <h3 className="font-semibold text-zinc-900 dark:text-zinc-50">
+                    {page.title}
+                  </h3>
+                  <p className="mt-1 text-sm text-zinc-600 dark:text-zinc-400">
+                    {page.description}
+                  </p>
+                </Link>
+              </li>
+            ))}
+          </ul>
         </div>
       </section>
 

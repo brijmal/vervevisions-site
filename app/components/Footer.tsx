@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { MTH_PRODUCT_PATH } from "@/lib/mth/constants";
+import { seoPages } from "@/lib/mth/seo-pages";
 
 const navLinks = [
   { href: "/", label: "Home" },
@@ -14,8 +15,8 @@ export default function Footer() {
   return (
     <footer className="border-t border-zinc-800 bg-black">
       <div className="mx-auto max-w-6xl px-6 py-12">
-        <div className="flex flex-col gap-8 sm:flex-row sm:items-start sm:justify-between">
-          <div className="flex items-center gap-3">
+        <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="flex items-center gap-3 sm:col-span-2 lg:col-span-1">
             <Image
               src="/logo.png"
               alt=""
@@ -31,19 +32,37 @@ export default function Footer() {
               </p>
             </div>
           </div>
-          <nav
-            className="flex flex-wrap gap-6 text-sm"
-            aria-label="Footer navigation"
-          >
-            {navLinks.map(({ href, label }) => (
-              <Link
-                key={href}
-                href={href}
-                className="font-medium text-zinc-400 transition-colors hover:text-white"
-              >
-                {label}
-              </Link>
-            ))}
+
+          <nav aria-label="Footer navigation">
+            <p className="text-sm font-semibold text-white">Site</p>
+            <ul className="mt-4 space-y-2 text-sm">
+              {navLinks.map(({ href, label }) => (
+                <li key={href}>
+                  <Link
+                    href={href}
+                    className="font-medium text-zinc-400 transition-colors hover:text-white"
+                  >
+                    {label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </nav>
+
+          <nav aria-label="MTH solutions">
+            <p className="text-sm font-semibold text-white">MTH solutions</p>
+            <ul className="mt-4 space-y-2 text-sm">
+              {seoPages.map((page) => (
+                <li key={page.slug}>
+                  <Link
+                    href={`/${page.slug}`}
+                    className="font-medium text-zinc-400 transition-colors hover:text-white"
+                  >
+                    {page.title}
+                  </Link>
+                </li>
+              ))}
+            </ul>
           </nav>
         </div>
         <p className="mt-8 border-t border-zinc-800 pt-8 text-center text-sm text-zinc-500">
