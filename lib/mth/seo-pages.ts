@@ -45,21 +45,26 @@ export const seoPages: SEOPageConfig[] = [
     slug: "safety-app-for-seniors",
     title: "Safety App for Seniors",
     description:
-      "A privacy-first safety app designed for seniors—simple check-ins, not complicated tech.",
-    intro:
-      "Seniors and their families often want reassurance without complicated apps or invasive tracking. A safety app built for seniors should be easy to use, respectful of privacy, and focused on connection—not surveillance.",
+      "A privacy-first safety app designed for seniors—simple check-ins, not complicated tech. Seniors and their families often want reassurance without complicated apps or invasive tracking.",
+    intro: "",
     sections: [
       {
         heading: "What seniors need from a safety app",
         paragraphs: [
           "Large text, clear actions, and no steep learning curve matter. Seniors shouldn't need to navigate complex settings or share their location 24/7 to feel safe.",
-          "The best safety apps for seniors combine simplicity with reliability: a daily check-in, optional alerts to family, and respect for independence.",
+          "A safety app built for seniors should be easy to use, respectful of privacy, and focused on connection—not surveillance.",
+        ],
+      },
+      {
+        heading: "Simple enough for everyday use",
+        paragraphs: [
+          "A safety app for seniors should be easy to understand and use. A clear action and a simple daily routine can be more useful than complicated features that are difficult to remember.",
         ],
       },
       {
         heading: "How MTH supports seniors",
         paragraphs: [
-          "Main Theek Hoon is designed with seniors in mind—one daily check-in, optional SMS alerts to family, and no GPS tracking. It's reassurance without the burden of constant monitoring.",
+          "Main Theek Hoon is designed with seniors in mind—one daily check-in, optional location alerts to family, and no GPS tracking. It's reassurance without the burden of constant monitoring.",
         ],
       },
     ],
@@ -75,14 +80,19 @@ export const seoPages: SEOPageConfig[] = [
     slug: "safety-app-for-people-living-alone",
     title: "Safety App for People Living Alone",
     description:
-      "Stay connected and reassure loved ones with a simple safety app—no surveillance required.",
-    intro:
       "Living alone doesn't mean you want to be watched—but it can help to know someone will notice if something's wrong. A safety app for people living alone should offer that safety net without compromising privacy or independence.",
+    intro: "",
     sections: [
       {
         heading: "Independence with a safety net",
         paragraphs: [
           "Many people living alone want autonomy first. They don't want family calling every day—or tracking their every move. A check-in based safety app offers a middle ground: you confirm you're okay on your schedule; if you don't, someone you trust can be alerted.",
+        ],
+      },
+      {
+        heading: "Safety without surveillance",
+        paragraphs: [
+          "Main Theek Hoon doesn't require continuous GPS tracking or someone watching your movements. You decide when to check in, who your trusted contacts are, and whether to share your location.",
         ],
       },
       {
@@ -104,14 +114,19 @@ export const seoPages: SEOPageConfig[] = [
     slug: "check-in-app-for-elderly-parents",
     title: "Check-In App for Elderly Parents",
     description:
-      "Help elderly parents stay independent while giving your family peace of mind.",
-    intro:
       "Caring for elderly parents often means balancing their independence with your worry. A check-in app for elderly parents lets them live on their own terms while giving you a simple signal that they're okay each day.",
+    intro: "",
     sections: [
       {
         heading: "Peace of mind without overstepping",
         paragraphs: [
           "Daily phone calls can feel intrusive—for parents and for you. A check-in app reduces that friction: parents check in when it suits them; you get notified only when they don't, so you know when to reach out.",
+        ],
+      },
+      {
+        heading: "Is there a simple way to know they're okay?",
+        paragraphs: [
+          "If you have elderly parents, you worry about them—that's natural. But you don't want to constantly monitor them or call every day asking if they're fine. A daily check-in app answers that question simply: parents confirm they're okay when it suits them, and you're alerted only when they don't. Reassurance for you, independence for them.",
         ],
       },
       {
@@ -133,10 +148,15 @@ export const seoPages: SEOPageConfig[] = [
     slug: "family-reassurance",
     title: "Family Reassurance",
     description:
-      "Give your family reassurance with a simple daily check-in—without constant calls or tracking.",
-    intro:
       "Family reassurance doesn't have to mean hourly texts or GPS tracking. A thoughtful daily check-in can tell the people who care about you that you're fine—on your terms.",
+    intro: "",
     sections: [
+      {
+        heading: "A simple way to stay connected",
+        paragraphs: [
+          "One check-in a day can become a simple signal that everything is okay. It's especially useful when family members live apart or have different routines and schedules.",
+        ],
+      },
       {
         heading: "Reassurance, not surveillance",
         paragraphs: [
@@ -162,20 +182,33 @@ export const seoPages: SEOPageConfig[] = [
     slug: "privacy-first-safety-app",
     title: "Privacy-First Safety App",
     description:
-      "A safety app that protects your privacy—no GPS tracking, no surveillance, just simple check-ins.",
-    intro:
-      "Not every safety app respects your privacy. Many track your location, read your data, or share information with third parties. A privacy-first safety app puts you in control: you choose what to share, when, and with whom.",
+      "Not every safety app respects your privacy. Many track your location, sell your data, or store your information in the cloud. Main Theek Hoon is different—a privacy-first safety app built on simple daily check-ins, not surveillance. No login. No cloud. No data sharing. No location tracking unless you choose it.",
+    intro: "",
     sections: [
       {
         heading: "What privacy-first means",
         paragraphs: [
-          "Privacy-first means no hidden tracking, no selling your data, and no features that turn reassurance into surveillance. Your check-in is yours—shared only with the contacts you choose.",
+          "Privacy-first means no hidden tracking, no selling your data, and no features that turn reassurance into surveillance. Your check-in is yours—shared only with the contacts you choose, on your terms.",
+        ],
+      },
+      {
+        heading: "No login. No cloud. No data sharing.",
+        paragraphs: [
+          "No login required—use Main Theek Hoon without creating an account or handing over personal credentials.",
+          "No cloud storage—all your data stays on your device, not on distant servers you can't control.",
+          "No data sharing—we don't sell your information, share it with third parties, or use it for advertising.",
+        ],
+      },
+      {
+        heading: "No location tracking—unless you choose",
+        paragraphs: [
+          "No GPS tracking by default. Main Theek Hoon doesn't follow your movements or monitor you continuously. Location is shared only if you enable it—and only when sending an alert to trusted contacts you select.",
         ],
       },
       {
         heading: "MTH's privacy commitment",
         paragraphs: [
-          "Main Theek Hoon is built privacy-first: no GPS tracking, minimal data collection, and clear controls over who gets notified. Safety and privacy can—and should—go together.",
+          "Main Theek Hoon is built privacy-first from the ground up: no login, no cloud, no data sharing, no ads, and no always-on location tracking. Clear controls over who gets notified. Safety and privacy can—and should—go together.",
         ],
       },
     ],
