@@ -10,12 +10,14 @@ import {
 type DownloadCTAProps = {
   variant?: "primary" | "inline";
   showLogo?: boolean;
+  showLearnMore?: boolean;
   className?: string;
 };
 
 export default function DownloadCTA({
   variant = "primary",
   showLogo = false,
+  showLearnMore = false,
   className = "",
 }: DownloadCTAProps) {
   if (variant === "inline") {
@@ -61,12 +63,14 @@ export default function DownloadCTA({
         >
           Download the app
         </Link>
-        <Link
-          href={MTH_PRODUCT_PATH}
-          className="rounded-full border border-zinc-600 px-6 py-3 text-sm font-semibold text-white transition-colors hover:border-zinc-400"
-        >
-          Learn more
-        </Link>
+        {showLearnMore ? (
+          <Link
+            href={MTH_PRODUCT_PATH}
+            className="rounded-full border border-zinc-600 px-6 py-3 text-sm font-semibold text-white transition-colors hover:border-zinc-400"
+          >
+            Learn more
+          </Link>
+        ) : null}
       </div>
     </div>
   );

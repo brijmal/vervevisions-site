@@ -26,5 +26,5 @@ export default async function ResourceArticlePage({ params }: Props) {
   const { slug } = await params;
   const page = getResourcePage(slug);
   if (!page) notFound();
-  return <ContentPage {...page} />;
+  return <ContentPage {...page} showLearnMoreInCTA />;
 }

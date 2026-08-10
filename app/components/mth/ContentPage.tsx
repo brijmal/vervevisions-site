@@ -14,6 +14,7 @@ export type ContentPageProps = {
   sections: ContentSection[];
   relatedLinks?: { href: string; label: string }[];
   breadcrumb?: { label: string; href?: string };
+  showLearnMoreInCTA?: boolean;
 };
 
 export default function ContentPage({
@@ -23,6 +24,7 @@ export default function ContentPage({
   sections,
   relatedLinks,
   breadcrumb,
+  showLearnMoreInCTA = false,
 }: ContentPageProps) {
   return (
     <div className="min-h-screen bg-white dark:bg-zinc-950">
@@ -100,7 +102,7 @@ export default function ContentPage({
         )}
 
         <div className="mt-16">
-          <DownloadCTA />
+          <DownloadCTA showLearnMore={showLearnMoreInCTA} />
         </div>
       </article>
     </div>
