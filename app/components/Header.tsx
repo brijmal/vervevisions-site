@@ -1,10 +1,12 @@
 import Link from "next/link";
 import Image from "next/image";
+import { MTH_PRODUCT_PATH } from "@/lib/mth/constants";
 
 const navLinks = [
   { href: "/", label: "Home" },
+  { href: MTH_PRODUCT_PATH, label: "MTH" },
+  { href: "/resources", label: "Resources" },
   { href: "/about", label: "About" },
-  { href: "/services", label: "Services" },
   { href: "/contact", label: "Contact" },
 ];
 
@@ -27,7 +29,10 @@ export default function Header() {
           />
           <span className="hidden pb-1.5 sm:inline">Verve Visions</span>
         </Link>
-        <nav className="flex items-end gap-8 pb-1.5" aria-label="Main navigation">
+        <nav
+          className="flex items-end gap-6 pb-1.5 sm:gap-8"
+          aria-label="Main navigation"
+        >
           {navLinks.map(({ href, label }) => (
             <Link
               key={href}

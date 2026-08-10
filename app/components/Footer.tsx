@@ -1,10 +1,12 @@
 import Link from "next/link";
 import Image from "next/image";
+import { MTH_PRODUCT_PATH } from "@/lib/mth/constants";
 
 const navLinks = [
   { href: "/", label: "Home" },
+  { href: MTH_PRODUCT_PATH, label: "MTH" },
+  { href: "/resources", label: "Resources" },
   { href: "/about", label: "About" },
-  { href: "/services", label: "Services" },
   { href: "/contact", label: "Contact" },
 ];
 
@@ -12,7 +14,7 @@ export default function Footer() {
   return (
     <footer className="border-t border-zinc-800 bg-black">
       <div className="mx-auto max-w-6xl px-6 py-12">
-        <div className="flex flex-col gap-8 sm:flex-row sm:items-center sm:justify-between">
+        <div className="flex flex-col gap-8 sm:flex-row sm:items-start sm:justify-between">
           <div className="flex items-center gap-3">
             <Image
               src="/logo.png"
@@ -23,9 +25,7 @@ export default function Footer() {
               aria-hidden
             />
             <div>
-              <p className="font-semibold text-white">
-                Verve Visions
-              </p>
+              <p className="font-semibold text-white">Verve Visions</p>
               <p className="mt-1 max-w-sm text-sm text-zinc-400">
                 We make apps to enrich lives of the people.
               </p>
