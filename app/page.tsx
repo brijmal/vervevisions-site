@@ -12,23 +12,9 @@ export default function Home() {
             We create technology to enrich people's lives.
           </h1>
           <p className="mt-6 text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            At Verve Visions, we build software that matters—apps that simplify,
+            At Verve Visions, we build tech that matters—tools that simplify,
             inspire, and make a real difference for the people who use them.
           </p>
-          <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
-            <Link
-              href={MTH_PRODUCT_PATH}
-              className="rounded-full bg-zinc-900 px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-zinc-800 dark:bg-zinc-50 dark:text-zinc-900 dark:hover:bg-zinc-200"
-            >
-              Main Theek Hoon
-            </Link>
-            <Link
-              href="/contact"
-              className="rounded-full border border-zinc-300 px-6 py-3 text-sm font-semibold text-zinc-900 transition-colors hover:bg-zinc-50 dark:border-zinc-700 dark:text-zinc-50 dark:hover:bg-zinc-900"
-            >
-              Get in touch
-            </Link>
-          </div>
         </div>
       </section>
 
