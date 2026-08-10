@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import SocialLinks from "./SocialLinks";
 import { MTH_PRODUCT_PATH } from "@/lib/mth/constants";
 import { seoPages } from "@/lib/mth/seo-pages";
 
@@ -28,8 +29,9 @@ export default function Footer() {
             <div>
               <p className="font-semibold text-white">Verve Visions</p>
               <p className="mt-1 max-w-sm text-sm text-zinc-400">
-                We make apps to enrich lives of the people.
+                We create technology to enrich people's lives.
               </p>
+              <SocialLinks className="mt-6" />
             </div>
           </div>
 

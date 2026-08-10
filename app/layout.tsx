@@ -18,7 +18,7 @@ import Footer from "./components/Footer";
 export const metadata: Metadata = {
   title: "Verve Visions | Apps That Enrich Lives",
   description:
-    "Verve Visions makes apps to enrich lives of the people. Discover our mission, services, and get in touch.",
+    "Verve Visions creates technology to enrich people's lives. Discover our mission, services, and get in touch.",
 };
 
 export default function RootLayout({

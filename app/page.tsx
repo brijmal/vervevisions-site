@@ -9,7 +9,7 @@ export default function Home() {
       <section className="mx-auto max-w-6xl px-6 py-24 sm:py-32">
         <div className="mx-auto max-w-3xl text-center">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-900 dark:text-zinc-50 sm:text-5xl lg:text-6xl">
-            We make apps to enrich lives of the people.
+            We create technology to enrich people's lives.
           </h1>
           <p className="mt-6 text-lg leading-8 text-zinc-600 dark:text-zinc-400">
             At Verve Visions, we build software that matters—apps that simplify,

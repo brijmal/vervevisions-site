@@ -4,7 +4,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "About | Verve Visions",
   description:
-    "Learn about Verve Visions and our mission to make apps that enrich lives of the people.",
+    "Learn about Verve Visions and our mission to create technology that enriches people's lives.",
 };
 
 export default function About() {
@@ -16,7 +16,7 @@ export default function About() {
             About Verve Visions
           </h1>
           <p className="mt-4 text-xl text-zinc-600 dark:text-zinc-400">
-            We make apps to enrich lives of the people.
+            We create technology to enrich people's lives.
           </p>
 
           <div className="mt-12 space-y-8 text-lg leading-relaxed text-zinc-600 dark:text-zinc-400">

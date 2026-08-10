@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import SocialLinks from "@/app/components/SocialLinks";
 import ContactForm from "./ContactForm";
 
 export const metadata: Metadata = {
@@ -21,6 +22,10 @@ export default function Contact() {
           </p>
 
           <ContactForm />
+
+          <div className="mt-12 rounded-xl border border-zinc-200 bg-zinc-50 p-6 dark:border-zinc-800 dark:bg-zinc-900/30">
+            <SocialLinks variant="light" />
+          </div>
         </div>
       </div>
     </div>
