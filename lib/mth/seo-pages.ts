@@ -29,7 +29,7 @@ export const seoPages: SEOPageConfig[] = [
       {
         heading: "Reassurance, not surveillance",
         paragraphs: [
-          "Main Theek Hoon is designed to help people stay connected without constantly monitoring them. There is no need for someone to track your movements or keep calling to ask if you're okay. You simply check in, and your trusted contacts know.",
+          "Main Theek Hoon keeps the ritual simple: check in when you're ready, and your chosen contacts get peace of mind. No GPS tracking, no always-on surveillance—just a daily wellness habit that works for seniors, people living alone, and families who want to stay connected.",
         ],
       },
     ],
