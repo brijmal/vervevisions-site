@@ -33,8 +33,9 @@ export const seoPages: SEOPageConfig[] = [
         ],
       },
     ],
+    ctaDescription:
+      "One tap a day to let the people who matter know you're okay—without calls, tracking, or complicated setup.",
     relatedLinks: [
-      { href: MTH_PRODUCT_PATH, label: "About Main Theek Hoon" },
       {
         href: "/resources/why-daily-check-ins-matter",
         label: "Why daily check-ins matter",
@@ -68,6 +69,8 @@ export const seoPages: SEOPageConfig[] = [
         ],
       },
     ],
+    ctaDescription:
+      "Designed for seniors who want independence with a simple daily check-in—not complicated tech or constant monitoring.",
     relatedLinks: [
       { href: MTH_PRODUCT_PATH, label: "Main Theek Hoon features" },
       {
@@ -102,6 +105,8 @@ export const seoPages: SEOPageConfig[] = [
         ],
       },
     ],
+    ctaDescription:
+      "Built for people who live alone and want peace of mind for themselves and their loved ones—on your terms.",
     relatedLinks: [
       { href: MTH_PRODUCT_PATH, label: "Learn about MTH" },
       {
@@ -136,6 +141,8 @@ export const seoPages: SEOPageConfig[] = [
         ],
       },
     ],
+    ctaDescription:
+      "Give your parents independence and yourself peace of mind—with one simple daily check-in.",
     relatedLinks: [
       { href: "/family-reassurance", label: "Family reassurance" },
       {
@@ -170,6 +177,8 @@ export const seoPages: SEOPageConfig[] = [
         ],
       },
     ],
+    ctaDescription:
+      "Stay connected across distance and busy schedules with one check-in a day that replaces dozens of worried messages.",
     relatedLinks: [
       { href: MTH_PRODUCT_PATH, label: "Main Theek Hoon" },
       {
@@ -212,6 +221,8 @@ export const seoPages: SEOPageConfig[] = [
         ],
       },
     ],
+    ctaDescription:
+      "No login, no cloud, no data sharing—just a private daily check-in that puts you in control.",
     relatedLinks: [
       { href: MTH_PRODUCT_PATH, label: "MTH privacy" },
       {

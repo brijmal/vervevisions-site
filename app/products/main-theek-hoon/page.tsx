@@ -3,7 +3,6 @@ import Link from "next/link";
 import DownloadCTA from "@/app/components/mth/DownloadCTA";
 import MTHLogo from "@/app/components/mth/MTHLogo";
 import {
-  MTH_DOWNLOAD_URL,
   MTH_PRODUCT_NAME,
   MTH_TAGLINE,
 } from "@/lib/mth/constants";
@@ -67,14 +66,6 @@ export default function MainTheekHoonPage() {
             connected with the people who care about you—simply, privately, and
             on your terms.
           </p>
-          <Link
-            href={MTH_DOWNLOAD_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="mt-10 inline-block rounded-full bg-zinc-900 px-8 py-3 text-sm font-semibold text-white transition-colors hover:bg-zinc-800 dark:bg-zinc-50 dark:text-zinc-900 dark:hover:bg-zinc-200"
-          >
-            Download the app
-          </Link>
         </div>
       </section>
 
@@ -246,7 +237,7 @@ export default function MainTheekHoonPage() {
 
       {/* Download CTA */}
       <section className="mx-auto max-w-6xl px-6 py-20">
-        <DownloadCTA showLogo />
+        <DownloadCTA description="Main Theek Hoon makes daily wellness check-ins simple—for you and the people who care about you." />
       </section>
     </div>
   );

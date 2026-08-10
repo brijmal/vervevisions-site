@@ -34,6 +34,8 @@ export const resourcePages: ResourcePageConfig[] = [
         ],
       },
     ],
+    ctaDescription:
+      "Turn the habit into practice—Main Theek Hoon makes one daily check-in easy for you and reassuring for your family.",
     relatedLinks: [
       { href: "/daily-check-in-app", label: "Daily check-in app" },
       { href: MTH_PRODUCT_PATH, label: "Main Theek Hoon" },
@@ -67,6 +69,8 @@ export const resourcePages: ResourcePageConfig[] = [
         ],
       },
     ],
+    ctaDescription:
+      "Looking for everyday reassurance—not just emergency alerts? Main Theek Hoon is built for that quiet daily 'I'm fine.'",
     relatedLinks: [
       { href: "/family-reassurance", label: "Family reassurance" },
       { href: MTH_PRODUCT_PATH, label: "About MTH" },
@@ -100,6 +104,8 @@ export const resourcePages: ResourcePageConfig[] = [
         ],
       },
     ],
+    ctaDescription:
+      "A respectful way to stay close to elderly parents—Main Theek Hoon lets them check in when ready, and you hear only when they don't.",
     relatedLinks: [
       {
         href: "/check-in-app-for-elderly-parents",
@@ -136,6 +142,8 @@ export const resourcePages: ResourcePageConfig[] = [
         ],
       },
     ],
+    ctaDescription:
+      "Safety without being watched—Main Theek Hoon uses simple check-ins, not constant monitoring.",
     relatedLinks: [
       { href: "/privacy-first-safety-app", label: "Privacy-first safety app" },
       {
@@ -172,6 +180,8 @@ export const resourcePages: ResourcePageConfig[] = [
         ],
       },
     ],
+    ctaDescription:
+      "Peace of mind without a map pin—Main Theek Hoon never tracks your location by default.",
     relatedLinks: [
       { href: "/privacy-first-safety-app", label: "Privacy-first safety app" },
       { href: MTH_PRODUCT_PATH, label: "MTH privacy" },
@@ -205,6 +215,8 @@ export const resourcePages: ResourcePageConfig[] = [
         ],
       },
     ],
+    ctaDescription:
+      "Reliable SMS alerts when a check-in is missed—so the people who care know to reach out.",
     relatedLinks: [
       { href: MTH_PRODUCT_PATH, label: "How MTH works" },
       { href: "/family-reassurance", label: "Family reassurance" },
@@ -238,6 +250,8 @@ export const resourcePages: ResourcePageConfig[] = [
         ],
       },
     ],
+    ctaDescription:
+      "A simple daily wellness habit—one tap to confirm you're okay, and peace of mind for the people who care.",
     relatedLinks: [
       {
         href: "/resources/why-daily-check-ins-matter",

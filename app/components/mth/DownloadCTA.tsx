@@ -7,16 +7,18 @@ import {
   MTH_PRODUCT_PATH,
 } from "@/lib/mth/constants";
 
+const DEFAULT_CTA_DESCRIPTION = `${MTH_PRODUCT_NAME} makes daily wellness check-ins simple—for you and the people who care about you.`;
+
 type DownloadCTAProps = {
   variant?: "primary" | "inline";
-  showLogo?: boolean;
+  description?: string;
   showLearnMore?: boolean;
   className?: string;
 };
 
 export default function DownloadCTA({
   variant = "primary",
-  showLogo = false,
+  description = DEFAULT_CTA_DESCRIPTION,
   showLearnMore = false,
   className = "",
 }: DownloadCTAProps) {
@@ -37,23 +39,18 @@ export default function DownloadCTA({
     <div
       className={`rounded-2xl bg-zinc-900 px-6 py-12 text-center dark:bg-zinc-800 sm:px-10 ${className}`}
     >
-      {showLogo && (
-        <Image
-          src={MTH_LOGO_PATH}
-          alt=""
-          width={64}
-          height={64}
-          className="mx-auto rounded-xl shadow-md"
-          aria-hidden
-        />
-      )}
-      <h2 className={`text-2xl font-semibold text-white sm:text-3xl ${showLogo ? "mt-6" : ""}`}>
+      <Image
+        src={MTH_LOGO_PATH}
+        alt=""
+        width={64}
+        height={64}
+        className="mx-auto rounded-xl shadow-md"
+        aria-hidden
+      />
+      <h2 className="mt-6 text-2xl font-semibold text-white sm:text-3xl">
         Ready to check in with peace of mind?
       </h2>
-      <p className="mx-auto mt-3 max-w-lg text-zinc-300">
-        {MTH_PRODUCT_NAME} makes daily wellness check-ins simple—for you and the
-        people who care about you.
-      </p>
+      <p className="mx-auto mt-3 max-w-lg text-zinc-300">{description}</p>
       <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
         <Link
           href={MTH_DOWNLOAD_URL}
