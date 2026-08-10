@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import DownloadCTA from "@/app/components/mth/DownloadCTA";
+import MTHLogo from "@/app/components/mth/MTHLogo";
 import {
   MTH_DOWNLOAD_URL,
   MTH_PRODUCT_NAME,
@@ -50,7 +51,8 @@ export default function MainTheekHoonPage() {
       {/* Hero */}
       <section className="mx-auto max-w-6xl px-6 py-20 sm:py-28">
         <div className="mx-auto max-w-3xl text-center">
-          <p className="text-sm font-semibold uppercase tracking-wide text-zinc-500 dark:text-zinc-400">
+          <MTHLogo size={112} className="mx-auto" />
+          <p className="mt-6 text-sm font-semibold uppercase tracking-wide text-zinc-500 dark:text-zinc-400">
             Verve Visions Product
           </p>
           <h1 className="mt-3 text-4xl font-bold tracking-tight text-zinc-900 dark:text-zinc-50 sm:text-5xl lg:text-6xl">
@@ -67,6 +69,8 @@ export default function MainTheekHoonPage() {
           </p>
           <Link
             href={MTH_DOWNLOAD_URL}
+            target="_blank"
+            rel="noopener noreferrer"
             className="mt-10 inline-block rounded-full bg-zinc-900 px-8 py-3 text-sm font-semibold text-white transition-colors hover:bg-zinc-800 dark:bg-zinc-50 dark:text-zinc-900 dark:hover:bg-zinc-200"
           >
             Download the app
@@ -242,7 +246,7 @@ export default function MainTheekHoonPage() {
 
       {/* Download CTA */}
       <section className="mx-auto max-w-6xl px-6 py-20">
-        <DownloadCTA />
+        <DownloadCTA showLogo />
       </section>
     </div>
   );

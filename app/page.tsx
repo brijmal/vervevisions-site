@@ -1,4 +1,5 @@
 import Link from "next/link";
+import MTHLogo from "@/app/components/mth/MTHLogo";
 import { MTH_PRODUCT_PATH } from "@/lib/mth/constants";
 
 export default function Home() {
@@ -35,7 +36,8 @@ export default function Home() {
       <section className="border-t border-zinc-200 bg-zinc-50 dark:border-zinc-800 dark:bg-zinc-900/30">
         <div className="mx-auto max-w-6xl px-6 py-20">
           <div className="mx-auto max-w-2xl text-center">
-            <p className="text-sm font-semibold uppercase tracking-wide text-zinc-500 dark:text-zinc-400">
+            <MTHLogo size={80} className="mx-auto" />
+            <p className="mt-6 text-sm font-semibold uppercase tracking-wide text-zinc-500 dark:text-zinc-400">
               Our product
             </p>
             <h2 className="mt-2 text-2xl font-semibold text-zinc-900 dark:text-zinc-50 sm:text-3xl">
