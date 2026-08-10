@@ -3,6 +3,7 @@ import DownloadCTA from "./DownloadCTA";
 
 export type ContentSection = {
   heading: string;
+  subheading?: string;
   paragraphs: string[];
 };
 
@@ -52,9 +53,11 @@ export default function ContentPage({
           </p>
         </header>
 
-        <p className="mt-8 text-lg leading-relaxed text-zinc-600 dark:text-zinc-400">
-          {intro}
-        </p>
+        {intro ? (
+          <p className="mt-8 text-lg leading-relaxed text-zinc-600 dark:text-zinc-400">
+            {intro}
+          </p>
+        ) : null}
 
         <div className="mt-12 space-y-10">
           {sections.map((section) => (
@@ -62,6 +65,11 @@ export default function ContentPage({
               <h2 className="text-2xl font-semibold text-zinc-900 dark:text-zinc-50">
                 {section.heading}
               </h2>
+              {section.subheading ? (
+                <h3 className="mt-3 text-lg font-medium text-zinc-800 dark:text-zinc-200">
+                  {section.subheading}
+                </h3>
+              ) : null}
               <div className="mt-4 space-y-4 text-lg leading-relaxed text-zinc-600 dark:text-zinc-400">
                 {section.paragraphs.map((paragraph, i) => (
                   <p key={i}>{paragraph}</p>

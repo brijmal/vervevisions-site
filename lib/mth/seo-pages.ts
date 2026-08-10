@@ -10,21 +10,26 @@ export const seoPages: SEOPageConfig[] = [
     slug: "daily-check-in-app",
     title: "Daily Check-In App",
     description:
-      "A simple daily check-in app that helps you stay connected without constant calls or surveillance.",
-    intro:
-      "If you want a lightweight way to let family know you're okay—without sharing your location or answering the phone every day—a daily check-in app can be the right fit. Main Theek Hoon (MTH) is built for exactly that: one tap, one message, peace of mind on both sides.",
+      "A simple daily check-in app that helps you stay connected with the people who matter, without constant calls or surveillance. Check in once a day to let your trusted contacts know you're okay.",
+    intro: "",
     sections: [
       {
-        heading: "What a daily check-in app does",
+        heading: "How does a daily check-in work?",
+        subheading: "A simple habit that keeps people connected",
         paragraphs: [
-          "A daily check-in app lets you confirm you're fine with a single action—often a tap or a short response. If you miss your check-in, trusted contacts can be notified so they know to reach out.",
-          "Unlike social apps or location trackers, a check-in app is focused on reassurance, not monitoring. You're in control of when and how you check in.",
+          "Set a convenient time for your daily check-in and confirm you're okay with a single tap. It's a small everyday habit that gives your family or trusted contacts peace of mind.",
         ],
       },
       {
-        heading: "Why choose MTH",
+        heading: "What happens when you miss a check-in?",
         paragraphs: [
-          "Main Theek Hoon keeps the ritual simple: check in when you're ready, and your chosen contacts get peace of mind. No GPS tracking, no always-on surveillance—just a daily wellness habit that works for seniors, people living alone, and families who want to stay connected.",
+          "If you don't check in as expected, Main Theek Hoon can send an SMS alert to your trusted contacts, letting them know that your usual check-in hasn't happened. They can then reach out and make sure you're okay.",
+        ],
+      },
+      {
+        heading: "Reassurance, not surveillance",
+        paragraphs: [
+          "Main Theek Hoon is designed to help people stay connected without constantly monitoring them. There is no need for someone to track your movements or keep calling to ask if you're okay. You simply check in, and your trusted contacts know.",
         ],
       },
     ],
