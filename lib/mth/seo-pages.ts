@@ -3,12 +3,19 @@ import { MTH_PRODUCT_PATH } from "@/lib/mth/constants";
 
 export type SEOPageConfig = ContentPageProps & {
   slug: string;
+  /** Unique browser/search title (without site name suffix) */
+  seoTitle: string;
+  /** Unique meta description (~150–160 characters) */
+  seoDescription: string;
 };
 
 export const seoPages: SEOPageConfig[] = [
   {
     slug: "daily-check-in-app",
     title: "Daily Check-In App",
+    seoTitle: "Daily Check-In App for Family Peace of Mind",
+    seoDescription:
+      "A simple daily check-in app to let trusted contacts know you're okay—without constant calls, GPS tracking, or surveillance. Try Main Theek Hoon.",
     description:
       "A simple daily check-in app that helps you stay connected with the people who matter, without constant calls or surveillance. Check in once a day to let your trusted contacts know you're okay.",
     intro: "",
@@ -45,6 +52,9 @@ export const seoPages: SEOPageConfig[] = [
   {
     slug: "safety-app-for-seniors",
     title: "Safety App for Seniors",
+    seoTitle: "Safety App for Seniors — Simple Daily Check-Ins",
+    seoDescription:
+      "A privacy-first safety app for seniors: easy daily check-ins, optional family alerts, and no complicated tech or constant monitoring. Learn about Main Theek Hoon.",
     description:
       "A privacy-first safety app designed for seniors—simple check-ins, not complicated tech. Seniors and their families often want reassurance without complicated apps or invasive tracking.",
     intro: "",
@@ -82,6 +92,9 @@ export const seoPages: SEOPageConfig[] = [
   {
     slug: "safety-app-for-people-living-alone",
     title: "Safety App for People Living Alone",
+    seoTitle: "Safety App for People Living Alone",
+    seoDescription:
+      "Stay independent with a safety net. Main Theek Hoon is a check-in app for people living alone—no GPS surveillance, just daily reassurance for you and your loved ones.",
     description:
       "Living alone doesn't mean you want to be watched—but it can help to know someone will notice if something's wrong. A safety app for people living alone should offer that safety net without compromising privacy or independence.",
     intro: "",
@@ -118,6 +131,9 @@ export const seoPages: SEOPageConfig[] = [
   {
     slug: "check-in-app-for-elderly-parents",
     title: "Check-In App for Elderly Parents",
+    seoTitle: "Check-In App for Elderly Parents",
+    seoDescription:
+      "Know your elderly parents are okay without constant calls or monitoring. A simple daily check-in app that respects their independence and gives you peace of mind.",
     description:
       "Caring for elderly parents often means balancing their independence with your worry. A check-in app for elderly parents lets them live on their own terms while giving you a simple signal that they're okay each day.",
     intro: "",
@@ -154,6 +170,9 @@ export const seoPages: SEOPageConfig[] = [
   {
     slug: "family-reassurance",
     title: "Family Reassurance",
+    seoTitle: "Family Reassurance Without Constant Calls or Tracking",
+    seoDescription:
+      "Give your family peace of mind with a simple daily check-in—not hourly texts or GPS tracking. Main Theek Hoon keeps everyone connected on your terms.",
     description:
       "Family reassurance doesn't have to mean hourly texts or GPS tracking. A thoughtful daily check-in can tell the people who care about you that you're fine—on your terms.",
     intro: "",
@@ -190,6 +209,9 @@ export const seoPages: SEOPageConfig[] = [
   {
     slug: "privacy-first-safety-app",
     title: "Privacy-First Safety App",
+    seoTitle: "Privacy-First Safety App — No Login, No Cloud Tracking",
+    seoDescription:
+      "A privacy-first safety app with no login, no cloud storage, and no data sharing. Main Theek Hoon uses simple check-ins—not GPS surveillance—to keep you connected.",
     description:
       "Not every safety app respects your privacy. Many track your location, sell your data, or store your information in the cloud. Main Theek Hoon is different—a privacy-first safety app built on simple daily check-ins, not surveillance. No login. No cloud. No data sharing. No location tracking unless you choose it.",
     intro: "",

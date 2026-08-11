@@ -2,8 +2,7 @@ import type { MetadataRoute } from "next";
 import { MTH_PRODUCT_PATH } from "@/lib/mth/constants";
 import { seoPages } from "@/lib/mth/seo-pages";
 import { resourcePages } from "@/lib/mth/resource-pages";
-
-const SITE_URL = "https://www.vervevisions.art";
+import { SITE_URL } from "@/lib/site";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const lastModified = new Date();

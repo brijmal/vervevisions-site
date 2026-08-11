@@ -14,8 +14,10 @@ const geistMono = Geist_Mono({
 
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import { SITE_URL } from "@/lib/site";
 
 export const metadata: Metadata = {
+  metadataBase: new URL(SITE_URL),
   title: "Verve Visions | Apps That Enrich Lives",
   description:
     "Verve Visions creates technology to enrich people's lives. Discover our mission, services, and get in touch.",
